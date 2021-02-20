@@ -1,0 +1,45 @@
+<div class="info-title">
+  Flight Information
+</div>
+<div class="list-group">
+  <a 
+    href="#" 
+    class="list-group-item list-group-item-action">
+    <span>
+      Plane Number
+    </span>
+    <span>
+      {{flightsService.selectedFlightInfo?.plane}}
+    </span>
+  </a>
+  <a 
+    href="#" 
+    class="list-group-item list-group-item-action">
+    <span>
+      Duration
+    </span>
+    <span>
+      {{flightsService.selectedFlightInfo?.duration}}
+    </span>
+  </a>
+  <a 
+    href="#" 
+    class="list-group-item list-group-item-action">
+    <span>
+      Destination Gate
+    </span>
+    <span>
+      {{flightsService.selectedFlightInfo?.to_gate}}
+    </span>
+  </a>
+  <a 
+    href="#" 
+    class="list-group-item list-group-item-action">
+    <span>
+      Origin Gate
+    </span>
+    <span>
+      {{flightsService.selectedFlightInfo?.from_gate}}
+    </span>
+  </a>
+</div>

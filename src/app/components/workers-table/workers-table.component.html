@@ -1,0 +1,13 @@
+<div class="workers-title">
+  Workers
+</div>
+<div class="list-group">
+  <a 
+    href="#" 
+    class="list-group-item list-group-item-action"
+    [ngClass]="{'list-group-item-secondary': worker.id == workersService.selectedWorkerId}"
+    *ngFor="let worker of workersService.workers"
+    (click)="loadFlights(worker.id)">
+    {{worker.name}} ({{worker.id}})
+  </a>
+</div>
