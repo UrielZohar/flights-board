@@ -15,6 +15,11 @@ export class FlightsService {
   private timeoutId: any; 
 
   public loadFlights(workerId: String) {
+    if (workerId != this.selectedWorkerId) {
+      this.selectedFlightInfo = undefined;
+      this.flights = [];
+      this.selectedFlightId = "";
+    }
     fetch(APIManager.getFlights(workerId))
     .then(res => res.json())
     .then(res => {

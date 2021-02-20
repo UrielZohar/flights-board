@@ -7,13 +7,15 @@ import { WorkersFlightsTableComponent } from './components/workers-flights-table
 import { FlightInformationComponent } from './components/flight-information/flight-information.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTableModule} from '@angular/material/table';
+import { FlightDurationPipe } from './pipes/flight-duration.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     WorkersTableComponent,
     WorkersFlightsTableComponent,
-    FlightInformationComponent
+    FlightInformationComponent,
+    FlightDurationPipe
   ],
   imports: [
     BrowserModule,
